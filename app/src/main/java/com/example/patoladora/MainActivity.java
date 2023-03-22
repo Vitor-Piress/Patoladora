@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -17,9 +18,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
         getWindow().setStatusBarColor(Color.rgb(206, 171, 224));
-     result = findViewById(R.id.result);
-     numUm = findViewById(R.id.numUm);
-     numDois = findViewById(R.id.numDois);
-
+        result = findViewById(R.id.result);
+        numUm = findViewById(R.id.numUm);
+        numDois = findViewById(R.id.numDois);
+    }
+    public void soma(View v){
+        int n1 = Integer.parseInt(numUm.getText().toString());
+        int n2 = Integer.parseInt(numDois.getText().toString());
+        int soma = n1+n2;
+        result.setText(soma);
+    }
+    public void subtracao(View v){
+        int n1 = Integer.parseInt(numUm.getText().toString());
+        int n2 = Integer.parseInt(numDois.getText().toString());
+        int sub = n1-n2;
+        result.setText(sub);
     }
 }
