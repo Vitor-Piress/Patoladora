@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
-        getWindow().setStatusBarColor(Color.rgb(206, 171, 224));
+        getWindow().setStatusBarColor(Color.rgb(187, 211, 136));
         result = findViewById(R.id.result);
         numUm = findViewById(R.id.numUm);
         numDois = findViewById(R.id.numDois);
