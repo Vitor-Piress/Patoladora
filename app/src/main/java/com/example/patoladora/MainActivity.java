@@ -34,4 +34,19 @@ public class MainActivity extends AppCompatActivity {
         int sub = n1-n2;
         result.setText(sub);
     }
+    public void multiplication(View v) {
+        int n1 = Integer.parseInt(numUm.getText().toString());
+        int n2 = Integer.parseInt(numDois.getText().toString());
+        int resultado = n1 * n2;
+
+        result.setText(resultado);
+    }
+
+    public void divisation(View v) {
+        int n1 = Integer.parseInt(numUm.getText().toString());
+        int n2 = Integer.parseInt(numDois.getText().toString());
+        int resultado = n1 / n2;
+
+        result.setText(resultado);
+    }
 }
