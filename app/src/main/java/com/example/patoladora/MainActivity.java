@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         int n2 = Integer.parseInt(numDois.getText().toString());
         int resultado = n1 * n2;
 
-        result.setText(resultado+" ");
+        result.setText(resultado);
     }
 
     public void divisation(View v) {

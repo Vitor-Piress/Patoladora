@@ -23,52 +23,52 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.14" />
+        app:layout_constraintVertical_bias="0.053" />
 
     <EditText
         android:id="@+id/numDois"
-        android:layout_width="180dp"
-        android:layout_height="43dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/a"
         android:ems="10"
         android:fontFamily="@font/icecream"
-        android:hint="Segundo numero"
+        android:hint="Nmr dois"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="#CC3A3A3A"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintHorizontal_bias="0.885"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/numUm"
-        android:layout_width="180dp"
-        android:layout_height="43dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/a"
         android:ems="10"
         android:fontFamily="@font/icecream"
-        android:hint="Primeiro numero"
+        android:hint="Nmr um"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="#CC3A3A3A"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnMulti"
+        android:id="@+id/btnMais"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="sans-serif-black"
-        android:onClick="multiplication"
-        android:text="x"
+        android:onClick="somation"
+        android:text="+"
         android:textAllCaps="false"
         android:textColor="#CC3A3A3A"
         android:textSize="24sp"
@@ -77,25 +77,7 @@
         app:layout_constraintHorizontal_bias="0.298"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.682" />
-
-    <Button
-        android:id="@+id/btnDivisao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FFFFFF"
-        android:fontFamily="sans-serif-black"
-        android:onClick="divisation"
-        android:text="÷"
-        android:textAllCaps="false"
-        android:textColor="#CC3A3A3A"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.65"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.682" />
+        app:layout_constraintVertical_bias="0.598" />
 
     <Button
         android:id="@+id/btnMenos"
@@ -113,29 +95,47 @@
         app:layout_constraintHorizontal_bias="0.65"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599" />
+        app:layout_constraintVertical_bias="0.598" />
 
     <Button
-        android:id="@+id/btnMais"
+        android:id="@+id/btnMulti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="sans-serif-black"
-        android:onClick="somation"
-        android:text="+"
+        android:onClick="multiplication"
+        android:text="x"
         android:textAllCaps="false"
         android:textColor="#CC3A3A3A"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintHorizontal_bias="0.298"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.702" />
+
+    <Button
+        android:id="@+id/btnDivisao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="sans-serif-black"
+        android:onClick="divisation"
+        android:text="÷"
+        android:textAllCaps="false"
+        android:textColor="#CC3A3A3A"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.702" />
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/icecream"
         android:text="0"
@@ -150,9 +150,9 @@
 
     <Button
         android:id="@+id/btnLimpar"
-        android:layout_width="358dp"
-        android:layout_height="41dp"
-        android:backgroundTint="#80FFFFFF"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/icecream"
         android:text="Limpar"
         android:textAllCaps="false"
@@ -168,14 +168,14 @@
         android:id="@+id/imageView2"
         android:layout_width="431dp"
         android:layout_height="537dp"
-        android:layout_marginEnd="-20dp"
+        android:layout_marginEnd="-80dp"
         android:layout_marginBottom="-200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.982"
+        app:layout_constraintVertical_bias="0.992"
         app:srcCompat="@drawable/background" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
