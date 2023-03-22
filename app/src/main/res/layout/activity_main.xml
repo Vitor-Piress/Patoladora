@@ -24,12 +24,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.053" />
+        app:layout_constraintVertical_bias="0.035" />
 
     <EditText
         android:id="@+id/numDois"
         android:layout_width="149dp"
-        android:layout_height="42dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/a"
         android:ems="10"
         android:fontFamily="sans-serif-black"
@@ -37,35 +37,57 @@
         android:inputType="textPersonName"
         android:shadowColor="#A2AF76"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="#14131B"
         android:textColorHighlight="#FFFFFF"
-        android:textColorHint="#15161E"
-        android:textSize="30sp"
+        android:textColorHint="#14131B"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513" />
 
     <EditText
         android:id="@+id/numUm"
         android:layout_width="151dp"
-        android:layout_height="41dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/a"
         android:ems="10"
         android:fontFamily="sans-serif-black"
         android:hint="Nmr um"
         android:inputType="textPersonName"
         android:textAlignment="center"
-        android:textColor="#00FFE8"
+        android:textColor="#14131B"
         android:textColorHighlight="#FD0000"
-        android:textColorHint="#15161E"
-        android:textSize="30sp"
+        android:textColorHint="#14131B"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <Button
+        android:id="@+id/btnMenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1A514C"
+        android:fontFamily="sans-serif-black"
+        android:onClick="subtation"
+        android:text="-"
+        android:textAllCaps="false"
+        android:textColor="#EFF0F0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.607"
+        app:strokeColor="#1A514C"
+        app:strokeWidth="5px" />
 
     <Button
         android:id="@+id/btnMais"
@@ -81,30 +103,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintHorizontal_bias="0.324"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598"
-        app:strokeColor="#1A514C"
-        app:strokeWidth="5px" />
-
-    <Button
-        android:id="@+id/btnMenos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#1A514C"
-        android:fontFamily="sans-serif-black"
-        android:onClick="subtation"
-        android:text="-"
-        android:textAllCaps="false"
-        android:textColor="#EFF0F0"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.65"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598"
+        app:layout_constraintVertical_bias="0.607"
         app:strokeColor="#1A514C"
         app:strokeWidth="5px" />
 
@@ -121,10 +123,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintHorizontal_bias="0.324"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702"
+        app:layout_constraintVertical_bias="0.709"
         app:strokeColor="#1A514C"
         app:strokeWidth="5px" />
 
@@ -141,10 +143,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintHorizontal_bias="0.675"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702"
+        app:layout_constraintVertical_bias="0.709"
         app:strokeColor="#1A514C" />
 
     <TextView
@@ -161,7 +163,7 @@
         android:textColor="#14131B"
         android:textColorHighlight="#FF0000"
         android:textColorHint="#FF0000"
-        android:textSize="96sp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -170,7 +172,7 @@
 
     <Button
         android:id="@+id/btnLimpar"
-        android:layout_width="300dp"
+        android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#EFF0F0"
         android:fontFamily="sans-serif-black"
@@ -182,10 +184,9 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result"
-        app:layout_constraintVertical_bias="0.021"
+        app:layout_constraintVertical_bias="0.0"
         app:strokeColor="#FF14131B"
         app:strokeWidth="5px" />
 
