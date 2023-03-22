@@ -27,21 +27,21 @@ public class MainActivity extends AppCompatActivity {
         int n2 = Integer.parseInt(numDois.getText().toString());
         int soma = n1+n2;
 
-        result.setText(soma);
+        result.setText(soma+" ");
     }
     public void subtation(View v){
         int n1 = Integer.parseInt(numUm.getText().toString());
         int n2 = Integer.parseInt(numDois.getText().toString());
         int sub = n1-n2;
 
-        result.setText(sub);
+        result.setText(sub+" ");
     }
     public void multiplication(View v) {
         int n1 = Integer.parseInt(numUm.getText().toString());
         int n2 = Integer.parseInt(numDois.getText().toString());
         int resultado = n1 * n2;
 
-        result.setText(resultado);
+        result.setText(resultado+" ");
     }
 
     public void divisation(View v) {
@@ -49,6 +49,6 @@ public class MainActivity extends AppCompatActivity {
         int n2 = Integer.parseInt(numDois.getText().toString());
         int resultado = n1 / n2;
 
-        result.setText(resultado);
+        result.setText(resultado+" ");
     }
 }
