@@ -22,16 +22,18 @@ public class MainActivity extends AppCompatActivity {
         numUm = findViewById(R.id.numUm);
         numDois = findViewById(R.id.numDois);
     }
-    public void soma(View v){
+    public void somation(View v){
         int n1 = Integer.parseInt(numUm.getText().toString());
         int n2 = Integer.parseInt(numDois.getText().toString());
         int soma = n1+n2;
+
         result.setText(soma);
     }
-    public void subtracao(View v){
+    public void subtation(View v){
         int n1 = Integer.parseInt(numUm.getText().toString());
         int n2 = Integer.parseInt(numDois.getText().toString());
         int sub = n1-n2;
+
         result.setText(sub);
     }
     public void multiplication(View v) {
