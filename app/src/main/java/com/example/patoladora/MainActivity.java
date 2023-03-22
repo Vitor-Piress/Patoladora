@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     TextView result;
     EditText numUm, numDois;
     ImageView foto;
-    int n1, n2;
+    double n1, n2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,15 +32,15 @@ public class MainActivity extends AppCompatActivity {
     }
     public void valores(){
         try {
-            n1 = Integer.parseInt(numUm.getText().toString());
-            n2 = Integer.parseInt(numDois.getText().toString());
+            n1 = Double.parseDouble(numUm.getText().toString());
+            n2 = Double.parseDouble(numDois.getText().toString());
         }catch (Exception e){
             Toast.makeText(this, "Um ou mais campos estão vazios, os resultados podem estar inconsistentes", Toast.LENGTH_SHORT).show();
         }
     }
     public void somation(View v){
         valores();
-        int soma = n1+n2;
+        double soma = n1+n2;
 
         foto.setImageDrawable(null);
         foto.setBackgroundResource(R.drawable.background);
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void subtation(View v){
         valores();
-        int sub = n1-n2;
+        double sub = n1-n2;
 
         foto.setImageDrawable(null);
         foto.setBackgroundResource(R.drawable.background);
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void multiplication(View v) {
         valores();
-        int resultado = n1 * n2;
+        double resultado = n1 * n2;
 
         foto.setImageDrawable(null);
         foto.setBackgroundResource(R.drawable.background);
@@ -65,11 +65,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void divisation(View v) {
         valores();
-        int resultado = n1 / n2;
+        double resultado = n1 / n2;
 
         foto.setImageDrawable(null);
         foto.setBackgroundResource(R.drawable.background);
-        result.setText(resultado+" ");
+        result.setText(resultado+"");
     }
     public void limpation(View v){
         result.setText(null);
