@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         numUm = findViewById(R.id.numUm);
         numDois = findViewById(R.id.numDois);
 
+
     }
     public void valores(){
         try {
