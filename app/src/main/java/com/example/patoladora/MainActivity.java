@@ -16,9 +16,6 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         getWindow().setStatusBarColor(Color.rgb(206, 171, 224));
 
-    }
-    public void entrar(View v){
-        Intent i = new Intent(this, Patoladora.class);
-        startActivity(i);
+
     }
 }
