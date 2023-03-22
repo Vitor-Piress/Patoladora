@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     TextView result;
     EditText numUm, numDois;
-    int numeroUm, numeroDois;
+    int n1, n2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,43 +23,39 @@ public class MainActivity extends AppCompatActivity {
         result = findViewById(R.id.result);
         numUm = findViewById(R.id.numUm);
         numDois = findViewById(R.id.numDois);
-        valores();
+
+    }
+    public void valores(){
+        try {
+            n1 = Integer.parseInt(numUm.getText().toString());
+            n2 = Integer.parseInt(numDois.getText().toString());
+        }catch (Exception e){
+            Toast.makeText(this, "Insira um valor para realizar as operações", Toast.LENGTH_SHORT).show();
+        }
     }
     public void somation(View v){
-        int n1 = Integer.parseInt(numUm.getText().toString());
-        int n2 = Integer.parseInt(numDois.getText().toString());
+        valores();
         int soma = n1+n2;
 
         result.setText(soma+" ");
     }
     public void subtation(View v){
-        int n1 = Integer.parseInt(numUm.getText().toString());
-        int n2 = Integer.parseInt(numDois.getText().toString());
+        valores();
         int sub = n1-n2;
 
         result.setText(sub+" ");
     }
     public void multiplication(View v) {
-        int n1 = Integer.parseInt(numUm.getText().toString());
-        int n2 = Integer.parseInt(numDois.getText().toString());
+        valores();
         int resultado = n1 * n2;
 
         result.setText(resultado);
     }
 
     public void divisation(View v) {
-        int n1 = Integer.parseInt(numUm.getText().toString());
-        int n2 = Integer.parseInt(numDois.getText().toString());
+        valores();
         int resultado = n1 / n2;
 
         result.setText(resultado+" ");
-    }
-    public void valores(){
-        try {
-            numeroUm = Integer.parseInt(numUm.getText().toString());
-            numeroDois = Integer.parseInt(numDois.getText().toString());
-        }catch (Exception e){
-            Toast.makeText(this, "Insira um valor para realizar as operações", Toast.LENGTH_SHORT).show();
-        }
     }
 }
