@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     TextView result;
@@ -50,5 +51,14 @@ public class MainActivity extends AppCompatActivity {
         int resultado = n1 / n2;
 
         result.setText(resultado+" ");
+    }
+    public void valores(){
+        try {
+            int numeroUm, numeroDois;
+            numeroUm = Integer.parseInt(numUm.getText().toString());
+             numeroDois = Integer.parseInt(numDois.getText().toString());
+        }catch (Exception e){
+            Toast.makeText(this, "Insira um valor para realizar as operações", Toast.LENGTH_SHORT).show();
+        }
     }
 }
