@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     TextView result;
     EditText numUm, numDois;
+    int numeroUm, numeroDois;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,9 +56,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void valores(){
         try {
-            int numeroUm, numeroDois;
             numeroUm = Integer.parseInt(numUm.getText().toString());
-             numeroDois = Integer.parseInt(numDois.getText().toString());
+            numeroDois = Integer.parseInt(numDois.getText().toString());
         }catch (Exception e){
             Toast.makeText(this, "Insira um valor para realizar as operações", Toast.LENGTH_SHORT).show();
         }
