@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         result = findViewById(R.id.result);
         numUm = findViewById(R.id.numUm);
         numDois = findViewById(R.id.numDois);
+        valores();
     }
     public void somation(View v){
         int n1 = Integer.parseInt(numUm.getText().toString());
