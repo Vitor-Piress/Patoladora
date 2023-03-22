@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         valores();
         int resultado = n1 * n2;
 
-        result.setText(resultado);
+        result.setText(resultado+" ");
     }
 
     public void divisation(View v) {
