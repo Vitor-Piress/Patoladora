@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     EditText numUm, numDois;
     ImageView foto;
     double n1, n2;
+    int d1, d2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         try {
             n1 = Double.parseDouble(numUm.getText().toString());
             n2 = Double.parseDouble(numDois.getText().toString());
+            d1 = Integer.parseInt(numUm.getText().toString());
+            d2 = Integer.parseInt(numDois.getText().toString());
         }catch (Exception e){
             Toast.makeText(this, "Um ou mais campos estão vazios, os resultados podem estar inconsistentes", Toast.LENGTH_SHORT).show();
         }
@@ -65,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void divisation(View v) {
         valores();
-        int resultado = n1 / n2;
+        int resultado = d1 / d2;
 
         foto.setImageDrawable(null);
         foto.setBackgroundResource(R.drawable.background);
