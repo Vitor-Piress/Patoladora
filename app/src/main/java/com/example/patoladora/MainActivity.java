@@ -65,11 +65,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void divisation(View v) {
         valores();
-        double resultado = n1 / n2;
+        int resultado = n1 / n2;
 
         foto.setImageDrawable(null);
         foto.setBackgroundResource(R.drawable.background);
-        result.setText(resultado+"");
+        result.setText(resultado);
     }
     public void limpation(View v){
         result.setText(null);
